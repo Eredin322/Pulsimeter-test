@@ -17,15 +17,13 @@
     align-items: center;
   }
   &__item {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     align-items: center;
     font-size: 14px;
     font-weight: 300;
     text-align: center;
     color: #0d0d0d;
     width: 250px;
+    margin-left: 20px;
     img {
       display: block;
       width: 70px;
