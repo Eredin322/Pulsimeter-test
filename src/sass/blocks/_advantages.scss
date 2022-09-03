@@ -17,9 +17,9 @@
     align-items: center;
   }
   &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     align-items: center;
     font-size: 14px;
     font-weight: 300;
@@ -29,9 +29,11 @@
     img {
       display: block;
       width: 70px;
+      margin: 0 auto;
       margin-bottom: 38px;
     }
     span {
+      display: block;
       font-size: 18px;
       font-weight: bold;
       text-align: center;
@@ -39,9 +41,7 @@
       margin-bottom: 25px;
     }
     a {
-      display: flex;
       color: $main-color;
-      font-size: 8px;
     }
   }
 }
