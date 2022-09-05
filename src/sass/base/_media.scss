@@ -38,6 +38,11 @@
     text-align: center;
   }
   }
+  .carousel {
+    &__inner {
+      width: 100%;
+    }
+  }
 };
 @media (max-width: 788px) {
   .advantages {
@@ -167,6 +172,9 @@
     &_main {
       width: 250px;
       height: 50px;
+      font-size: 14px;
+    }
+    &_submit {
       font-size: 14px;
     }
   }
