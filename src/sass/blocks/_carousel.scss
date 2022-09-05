@@ -1,14 +1,18 @@
 .carousel {
   padding: 81px 0;
+  .container {
+    position: relative;
+  }
   &__inner {
     position: relative;
-    width: 750px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     img {
       width: 100%;
     }
   }
-  .slick-prev, .slick-next {
+  .prev, .next {
     position: absolute;
     top: 50%;
     transform: traslateY(-50%);
@@ -20,8 +24,23 @@
       width: 50px;
     }
   }
-  .slick-next {
+  .next {
     right: -66px;
     left: auto;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: space-around;
+    color: #D7D7D7;
+    font-size: 35px;
+    li {
+      transition: 0.3s all;
+    }
+    button {
+      display: none;
+    }
+  }
+  .slick-active {
+      color: #108AF9;
   }
 }

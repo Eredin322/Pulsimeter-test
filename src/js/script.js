@@ -1,17 +1,18 @@
+// --- КОД slick ---
 $(document).ready(function(){     // Отвечает за то, чтобы мы загружали наш слайдер только когда наш документ полностью. $ - библиотека JQuery
   $('.carousel__inner').slick({   // Обращаемся к классу carousel__inner. slick() это метод, который позволяет запустить наш slick слайдер
-
     speed: 1200,                  // Speed of slide scrolling
     adaptiveHeight: true,         // Высота карусели подстраивается
-
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow-left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow-right.svg"></button>',
+    prevArrow: '<button type="button" class="prev"><img src="icons/arrow-left.svg"></button>',
+    nextArrow: '<button type="button" class="next"><img src="icons/arrow-right.svg"></button>',
+    useCSS: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           dots: true,
-          arrows: false
+          arrows: false,
+          respondTo: ".container"
         }
       }
     ]
